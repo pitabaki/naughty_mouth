@@ -1,0 +1,20 @@
+{
+  "name": "naughty_mouth",
+  "version": "1.0.0",
+  "description": "Express App that takes in voice input and outputs text.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "NODE_ENV=development node server",
+    "prod": "NODE_ENV=production node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peter Berki",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "pug": "^2.0.4",
+    "serve-favicon": "^2.5.0"
+  }
+}
