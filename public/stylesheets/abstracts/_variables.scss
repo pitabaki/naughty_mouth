@@ -1,0 +1,40 @@
+/*
+ * Sizes
+ */
+
+$button-padding: 12px 24px;
+$primary-container: 1140px;
+$max-width: 1200px;
+
+/*
+ * Transition times
+ */
+
+ $time: 0.3s;
+
+/*
+ * Placeholders
+ */
+%container {
+    margin: 0 auto;
+}
+
+/*
+ * Colors
+ */
+
+/*PRIMARIES*/
+$white: rgb(255, 255, 255); /* #fff */
+
+$primary-color: #CC23FC;
+
+$body-main: #322238;
+$body-main-dark: #322238;
+$body-main-light: #EDEDED;
+
+
+/*SECONDARIES*/
+$secondary-color: #FE1B7E;
+$secondary-color-complement: #9FFE1C;
+$tertiary-color-complement: #ECFF1C;
+

@@ -1,0 +1,16 @@
+.jumbotron {
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+  background-color: $body-main-dark;
+  .jumbotron-heading {
+    margin-bottom: 10px;
+    font-family: $typeface--standard;
+    color: $body-main-light;
+  }
+  .lead {
+    margin-bottom: 20px;
+    font-family: $typeface--standard;
+    color: $body-main-light;
+  }
+}

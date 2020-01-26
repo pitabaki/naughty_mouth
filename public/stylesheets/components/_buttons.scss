@@ -1,0 +1,27 @@
+.btn {
+  margin: 0 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: $bold;
+  @include transition(all 0.3s ease-in);
+}
+.btn-primary {
+  color: $body-main-dark;
+  background-color: $secondary-color-complement;
+  border: 1px solid $secondary-color-complement;
+  @include on-event {
+    color: $body-main-dark;
+    background-color: hover_color($secondary-color-complement);
+    border: 1px solid hover_color($secondary-color-complement);
+	}	
+}
+.btn-secondary {
+  color: $body-main-dark;
+  background-color: $secondary-color;
+  border: 1px solid $secondary-color;
+  @include on-event {
+    color: $body-main-dark;
+    background-color: hover_color($secondary-color);
+    border: 1px solid hover_color($secondary-color);
+	}	
+}

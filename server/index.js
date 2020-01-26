@@ -4,6 +4,7 @@ const path = require('path');
 const configs = require('./config');
 const httpHeaders = require('./config/headers');
 const favicon = require('serve-favicon');
+const sassMiddleware = require('node-sass-middleware');
 const routes = require('./routes');
 const router = express.Router();
 
@@ -22,6 +23,13 @@ app.set('views', path.join(__dirname, './views'));
 app.locals.title = config.sitename;
 
 app.use(favicon(__dirname + '/favicon.ico'));
+
+app.use(sassMiddleware({
+    src: 'public',
+    dest: 'public',
+    indentedSyntax: false, // true = .sass and false = .scss
+    sourceMap: true
+}));
 
 app.use(express.static("public"));
 

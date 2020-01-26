@@ -1,0 +1,110 @@
+/*
+ * General sizes and color attributes
+ */
+
+ * {
+	font-family: $typeface--standard;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-decoration: none;
+	text-transform: initial;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, p, a, ul, ol, li, img, article, aside, blockquote, figure, figcaption, footer, header, hgroup, menu, nav, section, time {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, time {
+	display: block;
+}
+a {
+	outline: none;
+}
+
+body {
+	font-size: 18px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+	font-family: $typeface--standard;
+	color: $body-main;
+	font-weight: $regular;
+}
+p {
+	font-size: 18px;
+	line-height: 24px;
+}
+button {
+	padding: $button-padding;
+}
+section {
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+}
+h1 {
+	font-size: $h1-size;
+	line-height: $h1-leading;
+	font-weight: $bold;
+}
+h2 {
+	font-size: $h2-size;
+	line-height: $h2-leading;
+	font-weight: $semi-bold;
+}
+h3 {
+	font-size: $h3-size;
+	line-height: $h3-leading;
+}
+h4 {
+	font-size: $h3-size;
+	line-height: $h3-leading;
+}
+h5 {
+	font-size: $h3-size;
+	line-height: $h3-leading;
+}
+h6 {
+	font-size: $h3-size;
+	line-height: $h3-leading;
+	font-weight: $bold;
+}
+a {
+	color: $secondary-color;
+	text-decoration: none;
+	@include transition( color 0.3s ease-in );
+	@include on-event {
+		color: hover_color($secondary-color);
+		text-decoration: none;
+	}	
+}
+.standard-section {
+	margin: 0 auto;
+	padding: 60px 0;
+}
+.container-fixed {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	max-width: $max-width;
+}
